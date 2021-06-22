@@ -38,6 +38,7 @@ dependencies {
     implementation Deps.appCompat
     implementation Deps.material
     implementation Deps.constraintLayout
+    implementation Deps.exoplayer
     testImplementation Deps.junit
     androidTestImplementation Deps.androidJunit
     androidTestImplementation Deps.espresso

@@ -15,4 +15,6 @@ public class Deps {
     public static final String junit = "junit:junit:4.13.2";
     public static final String androidJunit = "androidx.test.ext:junit:1.1.2";
     public static final String espresso = "androidx.test.espresso:espresso-core:3.3.0";
+
+    public static final String exoplayer = "com.google.android.exoplayer:exoplayer:2.14.1";
 }

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Player</string>
+    <string name="menu_open_video">Open Video</string>
+    <string name="dialog_open_media_title">Enter Url</string>
 </resources>
