@@ -1,5 +1,8 @@
 package com.reboot297.player.android
 
+import android.content.Intent
+import android.content.Intent.ACTION_VIEW
+import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -10,6 +13,7 @@ import com.google.android.exoplayer2.MediaItem
 import com.google.android.exoplayer2.SimpleExoPlayer
 import com.google.android.exoplayer2.ui.PlayerView
 
+const val PRIVACY_POLICY_LINK = "https://sites.google.com/view/reboot297-player-pp"
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,9 +38,17 @@ class MainActivity : AppCompatActivity() {
             R.id.openVideo -> {
                 openVideoDialog()
             }
-
+            R.id.privacy -> {
+                openPrivacyPolicy()
+            }
         }
         return true
+    }
+
+    fun openPrivacyPolicy() {
+        val intent = Intent(ACTION_VIEW)
+        intent.data = Uri.parse(PRIVACY_POLICY_LINK)
+        startActivity(intent)
     }
 
     private fun openVideoDialog() {

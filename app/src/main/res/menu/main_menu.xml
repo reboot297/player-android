@@ -5,4 +5,8 @@
         android:id="@+id/openVideo"
         android:title="@string/menu_open_video"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/privacy"
+        android:title="@string/privacy_policy"
+        app:showAsAction="never" />
 </menu>
